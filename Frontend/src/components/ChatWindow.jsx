@@ -18,21 +18,27 @@ export default function ChatWindow() {
         <div className="h-full flex flex-col bg-[#0f0f0f]">
             {/* Header */}
             <div className="p-4 border-b border-gray-800">
-                <h2 className="text-xl font-semibold text-white">Research Assistant</h2>
+                <h2 className="text-xl font-semibold text-white">
+                    Research Assistant</h2>
+
                 <p className="text-sm text-gray-400">
-                    You are not authenticated. Please log in to chat with your documents.
+                    Chat with your documents.
                 </p>
             </div>
 
             {/* Message area */}
-            <div className="flex-1 p-4 flex flex-col justify-center items-center space-y-4">
+            <div className="flex-1 p-4 flex flex-col justify-center 
+            items-center space-y-4">
+
                 <div className="text-center text-gray-400">
-                    <p>Login to start chatting with your PDFs!</p>
+                    <p>Start chatting with your PDFs!</p>
                 </div>
 
                 {showThinking && (
                     <div className="text-gray-400 flex items-center space-x-2">
-                        <div className="animate-spin rounded-full h-4 w-4 border-b-2 border-gray-400"></div>
+                        <div className="animate-spin rounded-full h-4 w-4
+                        border-b-2 border-gray-400"></div>
+
                         <span>AI is thinking...</span>
                     </div>
                 )}
@@ -46,13 +52,14 @@ export default function ChatWindow() {
                         placeholder="Type a message..."
                         value={input}
                         onChange={(e) => setInput(e.target.value)}
-                        className="flex-1 p-3 rounded-md bg-[#1c1c1c] border border-gray-600 text-white
-                                   focus:outline-none focus:border-[#4C82FB]"
-                    />
+                        className="flex-1 p-3 rounded-md bg-[#1c1c1c] 
+                            border border-gray-600 text-white
+                                focus:outline-none focus:border-[#4C82FB]"/>
+
                     <button 
                         type="submit"
-                        className="px-6 py-2 bg-[#4C82FB] text-white rounded-md hover:bg-blue-600 transition"
-                    >
+                        className="px-6 py-2 bg-[#4C82FB] text-white
+                         rounded-md hover:bg-blue-600 transition">
                         Send
                     </button>
                 </div>

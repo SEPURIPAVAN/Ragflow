@@ -8,11 +8,11 @@ function App() {
   return (
     <>
       <BrowserRouter>
-      <Routes>
-        <Route path='/' element={ <Landingpage/> } />
-        <Route path='/MainApp' element={ <MainApp/> } />
-      </Routes>
-    </BrowserRouter>
+        <Routes>
+          <Route path='/' element={ <Landingpage/> } />
+          <Route path='/MainApp' element={ <MainApp/> } />
+        </Routes>
+      </BrowserRouter>
     </>
   )
 }
